@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testDynamicIcons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln8-lC-HMG">
+                                <rect key="frame" x="139.5" y="432.5" width="135" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Change App Icon" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="buttonOnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3AR-d2-Bg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-kb-Xyr">
+                                <rect key="frame" x="139.5" y="487.5" width="135" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="ExP-r1-utC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset Icon"/>
+                                <connections>
+                                    <action selector="resetIconButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIW-AT-UZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jg-yq-FYY">
+                                <rect key="frame" x="139.5" y="543.5" width="135" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="RMA-5j-P1e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Supports?"/>
+                                <connections>
+                                    <action selector="supportsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxV-93-zPh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNR-jS-aUm">
+                                <rect key="frame" x="139.5" y="599.5" width="135" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="AYq-32-RME"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get icon name"/>
+                                <connections>
+                                    <action selector="getIconNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAi-jj-xRK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Oxa-kb-Xyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5c-RR-qL6"/>
+                            <constraint firstItem="Ln8-lC-HMG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IUd-ql-aiw"/>
+                            <constraint firstItem="Ln8-lC-HMG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OKb-8E-hOD"/>
+                            <constraint firstItem="8jg-yq-FYY" firstAttribute="top" secondItem="Oxa-kb-Xyr" secondAttribute="bottom" constant="25" id="ZV6-Dt-DOd"/>
+                            <constraint firstItem="Oxa-kb-Xyr" firstAttribute="top" secondItem="Ln8-lC-HMG" secondAttribute="bottom" constant="24" id="hc7-gf-3m0"/>
+                            <constraint firstItem="kNR-jS-aUm" firstAttribute="top" secondItem="8jg-yq-FYY" secondAttribute="bottom" constant="25" id="im2-1C-sKe"/>
+                            <constraint firstItem="8jg-yq-FYY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oyt-8X-ekI"/>
+                            <constraint firstItem="kNR-jS-aUm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xwA-vJ-ccL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
